@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f4ef" />
+    <meta name="description" content="Your personal Azerbaijan and Georgia trip planner, with your places, itinerary, flight notes, and preparation checklist." />
+    <title>My Azerbaijan & Georgia Trip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Trip navigation">
+        <a class="brand" href="#home" aria-label="Trip journal home">
+          <span class="brand-mark" aria-hidden="true">A<span>·</span>G</span>
+          <span class="brand-copy"><strong>My Trip</strong><small>PERSONAL TRIP PLAN</small></span>
+        </a>
+        <div class="trip-switcher"><span class="trip-dot"></span><span>Azerbaijan <i>&</i> Georgia</span><span class="chevron" aria-hidden="true">⌄</span></div>
+        <nav class="primary-nav" aria-label="Main">
+          <a href="#home" data-page="home" class="nav-link active"><span class="nav-icon" aria-hidden="true">⌂</span>Overview</a>
+          <a href="#itinerary" data-page="itinerary" class="nav-link"><span class="nav-icon" aria-hidden="true">▦</span>Itinerary</a>
+          <a href="#places" data-page="places" class="nav-link"><span class="nav-icon" aria-hidden="true">⌖</span>Places</a>
+          <a href="#travel" data-page="travel" class="nav-link"><span class="nav-icon" aria-hidden="true">↗</span>Travel details</a>
+          <a href="#prep" data-page="prep" class="nav-link"><span class="nav-icon" aria-hidden="true">✓</span>Prep checklist</a>
+          <a href="#packing" data-page="packing" class="nav-link"><span class="nav-icon" aria-hidden="true">□</span>Packing & weather</a>
+        </nav>
+        <div class="sidebar-note"><span class="note-sparkle" aria-hidden="true">✳</span><p>A little room for spontaneity.<br /><strong>The plan can change.</strong></p></div>
+        <div class="sidebar-footer"><span class="status-dot"></span>Research in progress</div>
+      </aside>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <header class="topbar">
+          <div class="mobile-brand"><span class="brand-mark" aria-hidden="true">A<span>·</span>G</span><strong>My Trip</strong></div>
+          <div class="breadcrumbs"><span>My trips</span><span aria-hidden="true">/</span><strong>Azerbaijan & Georgia</strong></div>
+          <div class="topbar-right"><span class="trip-status"><span class="status-dot"></span>Planning</span><button class="avatar" aria-label="Trip profile">S</button></div>
+        </header>
+        <div id="page-root" class="page-root" aria-live="polite"></div>
+      </main>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home" data-page="home" class="mobile-nav-link active"><span aria-hidden="true">⌂</span><small>Home</small></a>
+        <a href="#itinerary" data-page="itinerary" class="mobile-nav-link"><span aria-hidden="true">▦</span><small>Plan</small></a>
+        <a href="#places" data-page="places" class="mobile-nav-link"><span aria-hidden="true">⌖</span><small>Places</small></a>
+        <a href="#travel" data-page="travel" class="mobile-nav-link"><span aria-hidden="true">↗</span><small>Travel</small></a>
+        <a href="#prep" data-page="prep" class="mobile-nav-link"><span aria-hidden="true">✓</span><small>Prep</small></a>
+        <a href="#packing" data-page="packing" class="mobile-nav-link"><span aria-hidden="true">□</span><small>Pack</small></a>
+      </nav>
+    </div>
+  </body>
+</html>
